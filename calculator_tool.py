@@ -8,15 +8,16 @@ class Calculator:
         self.result = num1 * num2
         return self.result
 
-    def add(self, num3, num4):
-        self.result = num3 + num4
+    def add(self, num1, num2):
+        self.result = num1 + num2
         return self.result
 
-    def subtract(self, num5, num6):
-        self.result = num5 - num6
+    def subtract(self, num1, num2):
+        self.result = num1 - num2
         return self.result
 
-    def divide(self, num7, num8):
-        self.result = num7 / num8
+    def divide(self, num1, num2):
+        if num2 == 0:
+            raise ValueError("Cannot divide by zero")
+        self.result = num1 / num2
         return self.result
-
