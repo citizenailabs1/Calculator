@@ -18,6 +18,6 @@ class Calculator:
 
     def divide(self, num1, num2):
         if num2 == 0:
-            raise ValueError("Cannot divide by zero")
+            raise ValueError("Cannot divide by 0.")
         self.result = num1 / num2
         return self.result
