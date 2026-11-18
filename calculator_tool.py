@@ -1,14 +1,22 @@
 
 
-def multiply(num1, num2):
-    return num1 * num2
+class Calculator:
+    def __init__(self):
+        self.result = 0
 
-def add(num3, num4):
-    return num3 + num4
+    def multiply(self, num1, num2):
+        self.result = num1 * num2
+        return self.result
 
-def subtract(num5, num6):
-    return num5 - num6
+    def add(self, num3, num4):
+        self.result = num3 + num4
+        return self.result
 
-def divide(num7, num8):
-    return num7 / num8
+    def subtract(self, num5, num6):
+        self.result = num5 - num6
+        return self.result
+
+    def divide(self, num7, num8):
+        self.result = num7 / num8
+        return self.result
 
